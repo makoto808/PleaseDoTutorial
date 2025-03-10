@@ -11,6 +11,9 @@
 		0714C0712D7D9FDA003617E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0714C06C2D7D9FDA003617E9 /* Assets.xcassets */; };
 		0714C0722D7D9FDA003617E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714C06D2D7D9FDA003617E9 /* ContentView.swift */; };
 		0714C0732D7D9FDA003617E9 /* PleaseDoTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714C06E2D7D9FDA003617E9 /* PleaseDoTutorialApp.swift */; };
+		07325D3F2D7ED15900B97D3B /* PleaseDoTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07325D3C2D7ED15900B97D3B /* PleaseDoTutorialUITests.swift */; };
+		07325D402D7ED15900B97D3B /* PleaseDoTutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07325D3D2D7ED15900B97D3B /* PleaseDoTutorialUITestsLaunchTests.swift */; };
+		07325D432D7ED15C00B97D3B /* PleaseDoTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07325D412D7ED15C00B97D3B /* PleaseDoTutorialTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,20 +41,10 @@
 		0714C06C2D7D9FDA003617E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0714C06D2D7D9FDA003617E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0714C06E2D7D9FDA003617E9 /* PleaseDoTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PleaseDoTutorialApp.swift; sourceTree = "<group>"; };
+		07325D3C2D7ED15900B97D3B /* PleaseDoTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PleaseDoTutorialUITests.swift; sourceTree = "<group>"; };
+		07325D3D2D7ED15900B97D3B /* PleaseDoTutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PleaseDoTutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		07325D412D7ED15C00B97D3B /* PleaseDoTutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PleaseDoTutorialTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		0714C0502D7D9FC1003617E9 /* PleaseDoTutorialTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PleaseDoTutorialTests;
-			sourceTree = "<group>";
-		};
-		0714C05A2D7D9FC1003617E9 /* PleaseDoTutorialUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PleaseDoTutorialUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0714C03A2D7D9FBE003617E9 /* Frameworks */ = {
@@ -82,8 +75,12 @@
 			isa = PBXGroup;
 			children = (
 				0714C06F2D7D9FDA003617E9 /* PleaseDoTutorial */,
-				0714C0502D7D9FC1003617E9 /* PleaseDoTutorialTests */,
-				0714C05A2D7D9FC1003617E9 /* PleaseDoTutorialUITests */,
+				07325D3B2D7ED12B00B97D3B /* App */,
+				07325D382D7ED11100B97D3B /* Models */,
+				07325D3A2D7ED12200B97D3B /* Views */,
+				07325D392D7ED11A00B97D3B /* ViewModels */,
+				07325D422D7ED15C00B97D3B /* PleaseDoTutorialTests */,
+				07325D3E2D7ED15900B97D3B /* PleaseDoTutorialUITests */,
 				0714C03E2D7D9FBE003617E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -109,12 +106,57 @@
 		0714C06F2D7D9FDA003617E9 /* PleaseDoTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				0714C06C2D7D9FDA003617E9 /* Assets.xcassets */,
-				0714C06E2D7D9FDA003617E9 /* PleaseDoTutorialApp.swift */,
-				0714C06D2D7D9FDA003617E9 /* ContentView.swift */,
 				0714C06B2D7D9FDA003617E9 /* Preview Content */,
+				0714C06C2D7D9FDA003617E9 /* Assets.xcassets */,
 			);
 			path = PleaseDoTutorial;
+			sourceTree = "<group>";
+		};
+		07325D382D7ED11100B97D3B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		07325D392D7ED11A00B97D3B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		07325D3A2D7ED12200B97D3B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		07325D3B2D7ED12B00B97D3B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0714C06E2D7D9FDA003617E9 /* PleaseDoTutorialApp.swift */,
+				0714C06D2D7D9FDA003617E9 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		07325D3E2D7ED15900B97D3B /* PleaseDoTutorialUITests */ = {
+			isa = PBXGroup;
+			children = (
+				07325D3C2D7ED15900B97D3B /* PleaseDoTutorialUITests.swift */,
+				07325D3D2D7ED15900B97D3B /* PleaseDoTutorialUITestsLaunchTests.swift */,
+			);
+			path = PleaseDoTutorialUITests;
+			sourceTree = "<group>";
+		};
+		07325D422D7ED15C00B97D3B /* PleaseDoTutorialTests */ = {
+			isa = PBXGroup;
+			children = (
+				07325D412D7ED15C00B97D3B /* PleaseDoTutorialTests.swift */,
+			);
+			path = PleaseDoTutorialTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,9 +194,6 @@
 			dependencies = (
 				0714C04F2D7D9FC1003617E9 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				0714C0502D7D9FC1003617E9 /* PleaseDoTutorialTests */,
-			);
 			name = PleaseDoTutorialTests;
 			packageProductDependencies = (
 			);
@@ -174,9 +213,6 @@
 			);
 			dependencies = (
 				0714C0592D7D9FC1003617E9 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				0714C05A2D7D9FC1003617E9 /* PleaseDoTutorialUITests */,
 			);
 			name = PleaseDoTutorialUITests;
 			packageProductDependencies = (
@@ -269,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07325D432D7ED15C00B97D3B /* PleaseDoTutorialTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +313,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07325D3F2D7ED15900B97D3B /* PleaseDoTutorialUITests.swift in Sources */,
+				07325D402D7ED15900B97D3B /* PleaseDoTutorialUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
