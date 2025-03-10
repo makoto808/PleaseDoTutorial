@@ -29,11 +29,7 @@ struct ListView: View {
                 .padding(.top)
             
             List($items) { $item in
-                Text("item 1")
-                
-                Text("item 1")
-                
-                Text("item 1")
+                Text(item.title)
             }
             .scrollContentBackground(.hidden)
             .listStyle(.insetGrouped)
