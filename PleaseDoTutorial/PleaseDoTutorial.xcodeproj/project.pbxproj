@@ -15,6 +15,7 @@
 		07325D402D7ED15900B97D3B /* PleaseDoTutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07325D3D2D7ED15900B97D3B /* PleaseDoTutorialUITestsLaunchTests.swift */; };
 		07325D432D7ED15C00B97D3B /* PleaseDoTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07325D412D7ED15C00B97D3B /* PleaseDoTutorialTests.swift */; };
 		07325D4B2D7ED57500B97D3B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07325D4A2D7ED57500B97D3B /* HomeView.swift */; };
+		07325D4D2D7EDC3200B97D3B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07325D4C2D7EDC3200B97D3B /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		07325D3D2D7ED15900B97D3B /* PleaseDoTutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PleaseDoTutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		07325D412D7ED15C00B97D3B /* PleaseDoTutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PleaseDoTutorialTests.swift; sourceTree = "<group>"; };
 		07325D4A2D7ED57500B97D3B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		07325D4C2D7EDC3200B97D3B /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				07325D4A2D7ED57500B97D3B /* HomeView.swift */,
+				07325D4C2D7EDC3200B97D3B /* ListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07325D4D2D7EDC3200B97D3B /* ListView.swift in Sources */,
 				07325D4B2D7ED57500B97D3B /* HomeView.swift in Sources */,
 				0714C0722D7D9FDA003617E9 /* ContentView.swift in Sources */,
 				0714C0732D7D9FDA003617E9 /* PleaseDoTutorialApp.swift in Sources */,
