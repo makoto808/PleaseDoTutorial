@@ -13,10 +13,29 @@ struct ListItemView: View {
     let height: CGFloat
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(spacing: 10) {
+            VStack(alignment: .leading, spacing: 3) {
+                Text("QA Testing")
+                    .font(.headline)
+                    .lineLimit(1)
+                
+                Text("Some Description Here")
+                    .font(.body)
+                    .foregroundStyle(.secondary)
+                    .lineLimit(2)
+            }
+            
+            Spacer()
+            
+            Image(systemName: "circle")
+                .resizable()
+                .scaledToFit()
+                .foregroundStyle(.blue)
+                .frame(maxWidth: height * 0.45)
+        }
     }
 }
 
-#Preview {
+#Preview(traits: .sizeThatFitsLayout) {
     ListItemView(item: Item(id: "abc123", authorId: "John Doe", title: "First Name", description: "First Description", startDate: .now, status: .todo, priority: .low), height: 100)
 }
