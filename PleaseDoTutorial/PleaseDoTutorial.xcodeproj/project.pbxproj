@@ -17,6 +17,7 @@
 		07325D4B2D7ED57500B97D3B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07325D4A2D7ED57500B97D3B /* HomeView.swift */; };
 		07325D4D2D7EDC3200B97D3B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07325D4C2D7EDC3200B97D3B /* ListView.swift */; };
 		07325D4F2D7EDF4200B97D3B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07325D4E2D7EDF4200B97D3B /* Item.swift */; };
+		07325D512D82CD9D00B97D3B /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07325D502D82CD9D00B97D3B /* ListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		07325D4A2D7ED57500B97D3B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		07325D4C2D7EDC3200B97D3B /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		07325D4E2D7EDF4200B97D3B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		07325D502D82CD9D00B97D3B /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			children = (
 				07325D4A2D7ED57500B97D3B /* HomeView.swift */,
 				07325D4C2D7EDC3200B97D3B /* ListView.swift */,
+				07325D502D82CD9D00B97D3B /* ListItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				07325D4F2D7EDF4200B97D3B /* Item.swift in Sources */,
 				07325D4D2D7EDC3200B97D3B /* ListView.swift in Sources */,
 				07325D4B2D7ED57500B97D3B /* HomeView.swift in Sources */,
+				07325D512D82CD9D00B97D3B /* ListItemView.swift in Sources */,
 				0714C0722D7D9FDA003617E9 /* ContentView.swift in Sources */,
 				0714C0732D7D9FDA003617E9 /* PleaseDoTutorialApp.swift in Sources */,
 			);
