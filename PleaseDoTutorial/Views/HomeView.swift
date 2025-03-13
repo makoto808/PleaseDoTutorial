@@ -27,35 +27,40 @@ struct HomeView: View {
     
     var body: some View {
         NavigationStack {
-            TabView {
-                ListView(title: "To Do", items: $todoItems)
+            ZStack {
+                Color.background
+                    .ignoresSafeArea()
                 
-                ListView(title: "In Progress", items: $inProgressItems)
-                
-                ListView(title: "Done", items: $doneItems)
-                
-            }
-            .tabViewStyle(.page)
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    Button {
-                        print("LogOut")
-                    } label: {
-                        Image(systemName: "person.circle")
+                TabView {
+                    ListView(title: "To Do", items: $todoItems)
+                    
+                    ListView(title: "In Progress", items: $inProgressItems)
+                    
+                    ListView(title: "Done", items: $doneItems)
+                    
+                }
+                .tabViewStyle(.page)
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button {
+                            print("LogOut")
+                        } label: {
+                            Image(systemName: "person.circle")
+                        }
+                    }
+                    
+                    ToolbarItem(placement: .topBarTrailing)
+                    {
+                        Button {
+                            print("Navigate to new item")
+                        }label: {
+                            Image(systemName: "plus")
+                        }
                     }
                 }
-                
-                ToolbarItem(placement: .topBarTrailing)
-                {
-                    Button {
-                        print("Navigate to new item")
-                    }label: {
-                        Image(systemName: "plus")
-                    }
+                .navigationDestination(for: String.self) { _ in Text("New view here")
                 }
-            }
-            .navigationDestination(for: String.self) { _ in Text("New view here")
             }
         }
     }
