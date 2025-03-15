@@ -63,7 +63,7 @@ struct HomeView: View {
                     path in
                     switch path {
                     case .newItem:
-                        Text("New item view here")
+                        NewItemView()
                     case .details(let item):
                         Text(item.title)
                     }
