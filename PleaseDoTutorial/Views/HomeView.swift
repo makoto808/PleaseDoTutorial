@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     @StateObject private var vm = ListVM()
     @State private var path: [NavPath] = []
+    @State private var showLogout = false
     
     var body: some View {
         NavigationStack(path: $path) {
@@ -30,7 +31,7 @@ struct HomeView: View {
                 .toolbar {
                     ToolbarItem(placement: .topBarLeading) {
                         Button {
-                            print("LogOut")
+                            showLogout = true
                         } label: {
                             Image(systemName: "person.circle")
                         }
@@ -54,10 +55,20 @@ struct HomeView: View {
                         ItemDetailsView(item: item)
                     }
                 }
+                .confirmationDialog("Continue signing out",
+                                    isPresented: $showLogout) {
+                    Button("Confirm", role: .destructive) {
+                        print("Logout User Here")
+                    }
+                    Button("Cancel", role: .cancel) {}
+                } message: {
+                    Text("Continue signing out")
+                }
             }
         }
     }
 }
+
 
 #Preview {
     HomeView()

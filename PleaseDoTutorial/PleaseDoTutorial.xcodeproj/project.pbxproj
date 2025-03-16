@@ -14,6 +14,9 @@
 		072D4A0D2D86499800B9491C /* NewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072D4A0C2D86499800B9491C /* NewItemView.swift */; };
 		072D4A0F2D864A6900B9491C /* ItemDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072D4A0E2D864A6900B9491C /* ItemDetailsView.swift */; };
 		072D4A112D86BF5100B9491C /* ListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072D4A102D86BF5100B9491C /* ListVM.swift */; };
+		072D4A132D86CAD500B9491C /* StatusMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072D4A122D86CAD500B9491C /* StatusMenu.swift */; };
+		072D4A152D86CF5300B9491C /* PriorityMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072D4A142D86CF5300B9491C /* PriorityMenu.swift */; };
+		072D4A172D86D12D00B9491C /* TitledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072D4A162D86D12D00B9491C /* TitledTextField.swift */; };
 		07325D3F2D7ED15900B97D3B /* PleaseDoTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07325D3C2D7ED15900B97D3B /* PleaseDoTutorialUITests.swift */; };
 		07325D402D7ED15900B97D3B /* PleaseDoTutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07325D3D2D7ED15900B97D3B /* PleaseDoTutorialUITestsLaunchTests.swift */; };
 		07325D432D7ED15C00B97D3B /* PleaseDoTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07325D412D7ED15C00B97D3B /* PleaseDoTutorialTests.swift */; };
@@ -53,6 +56,9 @@
 		072D4A0C2D86499800B9491C /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
 		072D4A0E2D864A6900B9491C /* ItemDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsView.swift; sourceTree = "<group>"; };
 		072D4A102D86BF5100B9491C /* ListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVM.swift; sourceTree = "<group>"; };
+		072D4A122D86CAD500B9491C /* StatusMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenu.swift; sourceTree = "<group>"; };
+		072D4A142D86CF5300B9491C /* PriorityMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityMenu.swift; sourceTree = "<group>"; };
+		072D4A162D86D12D00B9491C /* TitledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitledTextField.swift; sourceTree = "<group>"; };
 		07325D3C2D7ED15900B97D3B /* PleaseDoTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PleaseDoTutorialUITests.swift; sourceTree = "<group>"; };
 		07325D3D2D7ED15900B97D3B /* PleaseDoTutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PleaseDoTutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		07325D412D7ED15C00B97D3B /* PleaseDoTutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PleaseDoTutorialTests.swift; sourceTree = "<group>"; };
@@ -155,6 +161,9 @@
 				07325D502D82CD9D00B97D3B /* ListItemView.swift */,
 				072D4A0C2D86499800B9491C /* NewItemView.swift */,
 				072D4A0E2D864A6900B9491C /* ItemDetailsView.swift */,
+				072D4A122D86CAD500B9491C /* StatusMenu.swift */,
+				072D4A142D86CF5300B9491C /* PriorityMenu.swift */,
+				072D4A162D86D12D00B9491C /* TitledTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -326,7 +335,10 @@
 				072D4A0D2D86499800B9491C /* NewItemView.swift in Sources */,
 				07325D4F2D7EDF4200B97D3B /* Item.swift in Sources */,
 				07325D4D2D7EDC3200B97D3B /* ListView.swift in Sources */,
+				072D4A172D86D12D00B9491C /* TitledTextField.swift in Sources */,
 				07325D562D82D94600B97D3B /* NavPath.swift in Sources */,
+				072D4A152D86CF5300B9491C /* PriorityMenu.swift in Sources */,
+				072D4A132D86CAD500B9491C /* StatusMenu.swift in Sources */,
 				072D4A112D86BF5100B9491C /* ListVM.swift in Sources */,
 				07325D4B2D7ED57500B97D3B /* HomeView.swift in Sources */,
 				07325D512D82CD9D00B97D3B /* ListItemView.swift in Sources */,
