@@ -21,6 +21,14 @@ struct LoginView: View {
             
             LoginFields()
 
+            HStack {
+                Spacer()
+                
+                LoginButton(title: "Login") {
+                    print("Login Button Tapped")
+                }
+            }
+            .padding(.horizontal)
             
             Spacer()
         }
