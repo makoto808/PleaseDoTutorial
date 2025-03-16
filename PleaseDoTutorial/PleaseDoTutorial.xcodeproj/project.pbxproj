@@ -17,6 +17,7 @@
 		072D4A132D86CAD500B9491C /* StatusMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072D4A122D86CAD500B9491C /* StatusMenu.swift */; };
 		072D4A152D86CF5300B9491C /* PriorityMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072D4A142D86CF5300B9491C /* PriorityMenu.swift */; };
 		072D4A172D86D12D00B9491C /* TitledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072D4A162D86D12D00B9491C /* TitledTextField.swift */; };
+		072D4A192D86FE0600B9491C /* CTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072D4A182D86FE0600B9491C /* CTAButton.swift */; };
 		07325D3F2D7ED15900B97D3B /* PleaseDoTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07325D3C2D7ED15900B97D3B /* PleaseDoTutorialUITests.swift */; };
 		07325D402D7ED15900B97D3B /* PleaseDoTutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07325D3D2D7ED15900B97D3B /* PleaseDoTutorialUITestsLaunchTests.swift */; };
 		07325D432D7ED15C00B97D3B /* PleaseDoTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07325D412D7ED15C00B97D3B /* PleaseDoTutorialTests.swift */; };
@@ -59,6 +60,7 @@
 		072D4A122D86CAD500B9491C /* StatusMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenu.swift; sourceTree = "<group>"; };
 		072D4A142D86CF5300B9491C /* PriorityMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityMenu.swift; sourceTree = "<group>"; };
 		072D4A162D86D12D00B9491C /* TitledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitledTextField.swift; sourceTree = "<group>"; };
+		072D4A182D86FE0600B9491C /* CTAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAButton.swift; sourceTree = "<group>"; };
 		07325D3C2D7ED15900B97D3B /* PleaseDoTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PleaseDoTutorialUITests.swift; sourceTree = "<group>"; };
 		07325D3D2D7ED15900B97D3B /* PleaseDoTutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PleaseDoTutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		07325D412D7ED15C00B97D3B /* PleaseDoTutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PleaseDoTutorialTests.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				072D4A122D86CAD500B9491C /* StatusMenu.swift */,
 				072D4A142D86CF5300B9491C /* PriorityMenu.swift */,
 				072D4A162D86D12D00B9491C /* TitledTextField.swift */,
+				072D4A182D86FE0600B9491C /* CTAButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				07325D4D2D7EDC3200B97D3B /* ListView.swift in Sources */,
 				072D4A172D86D12D00B9491C /* TitledTextField.swift in Sources */,
 				07325D562D82D94600B97D3B /* NavPath.swift in Sources */,
+				072D4A192D86FE0600B9491C /* CTAButton.swift in Sources */,
 				072D4A152D86CF5300B9491C /* PriorityMenu.swift in Sources */,
 				072D4A132D86CAD500B9491C /* StatusMenu.swift in Sources */,
 				072D4A112D86BF5100B9491C /* ListVM.swift in Sources */,
