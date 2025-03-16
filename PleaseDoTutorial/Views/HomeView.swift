@@ -8,22 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    @StateObject private var vm = ListVM()
     @State private var path: [NavPath] = []
-    @State private var todoItems: [Item] = [
-        Item(id: "abc123", authorId: "John Doe", title: "First Name", description: "First Description", startDate: .now, status: .todo, priority: .low),
-        Item(id: "def456", authorId: "John Doe", title: "Second Name", description: "Second Description", startDate: .now + 5, status: .inProgress, priority: .medium),
-        Item(id: "ghi789", authorId: "John Doe", title: "Third Name", description: "Third Description", startDate: .now + 10, status: .todo, priority: .low)
-    ]
-    @State private var inProgressItems: [Item] = [
-        Item(id: "abc123", authorId: "John Doe", title: "First Name", description: "First Description", startDate: .now, status: .todo, priority: .low),
-        Item(id: "def456", authorId: "John Doe", title: "Second Name", description: "Second Description", startDate: .now + 5, status: .inProgress, priority: .medium),
-        Item(id: "ghi789", authorId: "John Doe", title: "Third Name", description: "Third Description", startDate: .now + 10, status: .todo, priority: .low)
-    ]
-    @State private var doneItems: [Item] = [
-        Item(id: "abc123", authorId: "John Doe", title: "First Name", description: "First Description", startDate: .now, status: .todo, priority: .low),
-        Item(id: "def456", authorId: "John Doe", title: "Second Name", description: "Second Description", startDate: .now + 5, status: .inProgress, priority: .medium),
-        Item(id: "ghi789", authorId: "John Doe", title: "Third Name", description: "Third Description", startDate: .now + 10, status: .todo, priority: .low)
-    ]
     
     var body: some View {
         NavigationStack(path: $path) {
@@ -32,11 +18,11 @@ struct HomeView: View {
                     .ignoresSafeArea()
                 
                 TabView {
-                    ListView(title: "To Do", items: $todoItems)
+                    ListView(title: "To Do", items: $vm.todoItems)
                     
-                    ListView(title: "In Progress", items: $inProgressItems)
+                    ListView(title: "In Progress", items: $vm.inProgressItems)
                     
-                    ListView(title: "Done", items: $doneItems)
+                    ListView(title: "Done", items: $vm.doneItems)
                     
                 }
                 .tabViewStyle(.page)
