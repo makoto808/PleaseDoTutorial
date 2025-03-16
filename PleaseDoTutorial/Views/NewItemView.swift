@@ -33,19 +33,9 @@ struct NewItemView: View {
             
             Spacer()
             
-            Button {
-                print("Button Tapped")
-            } label: {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(Color.blue)
-                    
-                    Text("Confirm")
-                        .font(.largeTitle)
-                        .foregroundStyle(.white)
-                }
+            CTAButton(title: "Confirm") {
+                print("CTAButton Tapped")
             }
-            .frame(maxHeight: 65)
         }
         .padding(.horizontal)
     }
