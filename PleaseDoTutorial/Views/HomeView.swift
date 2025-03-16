@@ -23,7 +23,7 @@ struct HomeView: View {
                     ListView(title: "In Progress", items: $vm.inProgressItems)
                     
                     ListView(title: "Done", items: $vm.doneItems)
-                    //git test
+                    
                 }
                 .tabViewStyle(.page)
                 .navigationBarTitleDisplayMode(.inline)
