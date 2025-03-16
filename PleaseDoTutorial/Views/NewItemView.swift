@@ -14,6 +14,9 @@ struct NewItemView: View {
     
     var body: some View {
         VStack(spacing: 10) {
+            
+            Spacer()
+            
             TitledTextField(title: "Title", text: $text, placeholder: "What do you need to do?")
             
             Divider()
@@ -27,7 +30,24 @@ struct NewItemView: View {
             Divider()
             
             PriorityMenu(priority: $item.priority)
+            
+            Spacer()
+            
+            Button {
+                print("Button Tapped")
+            } label: {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(Color.blue)
+                    
+                    Text("Confirm")
+                        .font(.largeTitle)
+                        .foregroundStyle(.white)
+                }
+            }
+            .frame(maxHeight: 65)
         }
+        .padding(.horizontal)
     }
 }
 
