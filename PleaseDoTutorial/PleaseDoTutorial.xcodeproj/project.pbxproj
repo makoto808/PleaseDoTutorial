@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		07024CF12D870C4D00D70DC6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07024CF02D870C4D00D70DC6 /* LoginView.swift */; };
 		07024CF32D870EAC00D70DC6 /* LoginTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07024CF22D870EAC00D70DC6 /* LoginTitleView.swift */; };
+		07024CF52D878B2100D70DC6 /* LoginFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07024CF42D878B2100D70DC6 /* LoginFields.swift */; };
 		0714C0702D7D9FDA003617E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0714C06A2D7D9FDA003617E9 /* Preview Assets.xcassets */; };
 		0714C0712D7D9FDA003617E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0714C06C2D7D9FDA003617E9 /* Assets.xcassets */; };
 		0714C0722D7D9FDA003617E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714C06D2D7D9FDA003617E9 /* ContentView.swift */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		07024CF02D870C4D00D70DC6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		07024CF22D870EAC00D70DC6 /* LoginTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTitleView.swift; sourceTree = "<group>"; };
+		07024CF42D878B2100D70DC6 /* LoginFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFields.swift; sourceTree = "<group>"; };
 		0714C03D2D7D9FBE003617E9 /* PleaseDoTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PleaseDoTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0714C04D2D7D9FC1003617E9 /* PleaseDoTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PleaseDoTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0714C0572D7D9FC1003617E9 /* PleaseDoTutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PleaseDoTutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +124,7 @@
 			children = (
 				07024CF02D870C4D00D70DC6 /* LoginView.swift */,
 				07024CF22D870EAC00D70DC6 /* LoginTitleView.swift */,
+				07024CF42D878B2100D70DC6 /* LoginFields.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				072D4A132D86CAD500B9491C /* StatusMenu.swift in Sources */,
 				072D4A112D86BF5100B9491C /* ListVM.swift in Sources */,
 				07325D4B2D7ED57500B97D3B /* HomeView.swift in Sources */,
+				07024CF52D878B2100D70DC6 /* LoginFields.swift in Sources */,
 				07325D512D82CD9D00B97D3B /* ListItemView.swift in Sources */,
 				0714C0722D7D9FDA003617E9 /* ContentView.swift in Sources */,
 				0714C0732D7D9FDA003617E9 /* PleaseDoTutorialApp.swift in Sources */,
