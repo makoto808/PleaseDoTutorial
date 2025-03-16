@@ -19,6 +19,9 @@ struct LoginView: View {
                 .fontWeight(.semibold)
                 .padding(.horizontal)
             
+            LoginFields()
+
+            
             Spacer()
         }
     }
