@@ -14,6 +14,8 @@
 		07024CF92D878F4000D70DC6 /* PasswordField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07024CF82D878F4000D70DC6 /* PasswordField.swift */; };
 		07024CFB2D8792D300D70DC6 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07024CFA2D8792D300D70DC6 /* LoginButton.swift */; };
 		07024CFD2D88100900D70DC6 /* TogglePromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07024CFC2D88100900D70DC6 /* TogglePromptView.swift */; };
+		07024CFF2D88138300D70DC6 /* SignUpFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07024CFE2D88138300D70DC6 /* SignUpFields.swift */; };
+		07024D012D8813FA00D70DC6 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07024D002D8813FA00D70DC6 /* KeyboardView.swift */; };
 		0714C0702D7D9FDA003617E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0714C06A2D7D9FDA003617E9 /* Preview Assets.xcassets */; };
 		0714C0712D7D9FDA003617E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0714C06C2D7D9FDA003617E9 /* Assets.xcassets */; };
 		0714C0722D7D9FDA003617E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714C06D2D7D9FDA003617E9 /* ContentView.swift */; };
@@ -61,6 +63,8 @@
 		07024CF82D878F4000D70DC6 /* PasswordField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordField.swift; sourceTree = "<group>"; };
 		07024CFA2D8792D300D70DC6 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		07024CFC2D88100900D70DC6 /* TogglePromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglePromptView.swift; sourceTree = "<group>"; };
+		07024CFE2D88138300D70DC6 /* SignUpFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFields.swift; sourceTree = "<group>"; };
+		07024D002D8813FA00D70DC6 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		0714C03D2D7D9FBE003617E9 /* PleaseDoTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PleaseDoTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0714C04D2D7D9FC1003617E9 /* PleaseDoTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PleaseDoTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0714C0572D7D9FC1003617E9 /* PleaseDoTutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PleaseDoTutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,7 +140,9 @@
 				07024CF42D878B2100D70DC6 /* LoginFields.swift */,
 				07024CF22D870EAC00D70DC6 /* LoginTitleView.swift */,
 				07024CF82D878F4000D70DC6 /* PasswordField.swift */,
+				07024CFE2D88138300D70DC6 /* SignUpFields.swift */,
 				07024CFC2D88100900D70DC6 /* TogglePromptView.swift */,
+				07024D002D8813FA00D70DC6 /* KeyboardView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -381,6 +387,7 @@
 				07024CFD2D88100900D70DC6 /* TogglePromptView.swift in Sources */,
 				072D4A152D86CF5300B9491C /* PriorityMenu.swift in Sources */,
 				072D4A132D86CAD500B9491C /* StatusMenu.swift in Sources */,
+				07024D012D8813FA00D70DC6 /* KeyboardView.swift in Sources */,
 				072D4A112D86BF5100B9491C /* ListVM.swift in Sources */,
 				07325D4B2D7ED57500B97D3B /* HomeView.swift in Sources */,
 				07024CF52D878B2100D70DC6 /* LoginFields.swift in Sources */,
@@ -391,6 +398,7 @@
 				0714C0732D7D9FDA003617E9 /* PleaseDoTutorialApp.swift in Sources */,
 				07024CFB2D8792D300D70DC6 /* LoginButton.swift in Sources */,
 				072D4A0F2D864A6900B9491C /* ItemDetailsView.swift in Sources */,
+				07024CFF2D88138300D70DC6 /* SignUpFields.swift in Sources */,
 				07024CF32D870EAC00D70DC6 /* LoginTitleView.swift in Sources */,
 				07024CF12D870C4D00D70DC6 /* LoginView.swift in Sources */,
 				07325D532D82D44800B97D3B /* Extensions.swift in Sources */,
