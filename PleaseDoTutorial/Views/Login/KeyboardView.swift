@@ -12,7 +12,7 @@ struct KeyboardView: View {
     @Binding var text: String
     
     var body: some View {
-        TextField("Placeholder", text: $text)
+        TextField(placeholder, text: $text)
             .textFieldStyle(.roundedBorder)
             .submitLabel(.done)
             .textInputAutocapitalization(.words)

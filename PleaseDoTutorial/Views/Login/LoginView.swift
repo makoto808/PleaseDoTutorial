@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var vm = LoginVM()
+    @StateObject var vm = LoginVM()
     
     var body: some View {
         VStack(alignment: .leading, spacing: 15) {
@@ -16,21 +16,21 @@ struct LoginView: View {
             
             LoginTitleView()
             
-            Text("Login")
+            Text(vm.titleText)
                 .font(.title)
                 .fontWeight(.semibold)
                 .padding(.horizontal)
             
             if vm.isLoggingIn {
-                LoginFields()
+                LoginFields(email: $vm.email, pw: $vm.pw)
             } else {
-                SignUpFields()
+                SignUpFields(fname: $vm.fname, lname: $vm.lname, email: $vm.newEmail, pw: $vm.newPW)
             }
             
             HStack {
                 Spacer()
                 
-                LoginButton(title: "Login") {
+                LoginButton(title: vm.titleText) {
                     print("Login Button Tapped")
                 }
             }
