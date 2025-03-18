@@ -16,6 +16,7 @@
 		07024CFD2D88100900D70DC6 /* TogglePromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07024CFC2D88100900D70DC6 /* TogglePromptView.swift */; };
 		07024CFF2D88138300D70DC6 /* SignUpFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07024CFE2D88138300D70DC6 /* SignUpFields.swift */; };
 		07024D012D8813FA00D70DC6 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07024D002D8813FA00D70DC6 /* KeyboardView.swift */; };
+		07024D052D88FE2E00D70DC6 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07024D042D88FE2E00D70DC6 /* LoginVM.swift */; };
 		0714C0702D7D9FDA003617E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0714C06A2D7D9FDA003617E9 /* Preview Assets.xcassets */; };
 		0714C0712D7D9FDA003617E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0714C06C2D7D9FDA003617E9 /* Assets.xcassets */; };
 		0714C0722D7D9FDA003617E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714C06D2D7D9FDA003617E9 /* ContentView.swift */; };
@@ -65,6 +66,7 @@
 		07024CFC2D88100900D70DC6 /* TogglePromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglePromptView.swift; sourceTree = "<group>"; };
 		07024CFE2D88138300D70DC6 /* SignUpFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFields.swift; sourceTree = "<group>"; };
 		07024D002D8813FA00D70DC6 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		07024D042D88FE2E00D70DC6 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		0714C03D2D7D9FBE003617E9 /* PleaseDoTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PleaseDoTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0714C04D2D7D9FC1003617E9 /* PleaseDoTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PleaseDoTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0714C0572D7D9FC1003617E9 /* PleaseDoTutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PleaseDoTutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,6 +203,7 @@
 			children = (
 				072D4A102D86BF5100B9491C /* ListVM.swift */,
 				07325D552D82D94600B97D3B /* NavPath.swift */,
+				07024D042D88FE2E00D70DC6 /* LoginVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				07024CFD2D88100900D70DC6 /* TogglePromptView.swift in Sources */,
 				072D4A152D86CF5300B9491C /* PriorityMenu.swift in Sources */,
 				072D4A132D86CAD500B9491C /* StatusMenu.swift in Sources */,
+				07024D052D88FE2E00D70DC6 /* LoginVM.swift in Sources */,
 				07024D012D8813FA00D70DC6 /* KeyboardView.swift in Sources */,
 				072D4A112D86BF5100B9491C /* ListVM.swift in Sources */,
 				07325D4B2D7ED57500B97D3B /* HomeView.swift in Sources */,
