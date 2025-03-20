@@ -52,6 +52,10 @@ final class LoginVM: ObservableObject {
             auth.signUp(fname, lname, newEmail, newPW)
         }
     }
+    
+    func signOut() {
+        auth.signOut()
+    }
 }
 
 extension LoginVM: LoginManagerDelegate {

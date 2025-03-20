@@ -17,6 +17,7 @@ struct ContentView: View {
                 .progressViewStyle(.circular)
         case .loggedIn:
             HomeView()
+                .environmentObject(vm)
         case .loggedOut:
             LoginView()
                 .environmentObject(vm)
