@@ -42,6 +42,7 @@
 		0792964D2D89DC8F00838F6D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0792964C2D89DC8F00838F6D /* FirebaseAuth */; };
 		0792964F2D89DC8F00838F6D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0792964E2D89DC8F00838F6D /* FirebaseFirestore */; };
 		079296512D8BB36A00838F6D /* ItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079296502D8BB36A00838F6D /* ItemsManager.swift */; };
+		07EFF3D42D8BE70C0009D351 /* NewItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EFF3D32D8BE70C0009D351 /* NewItemVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		07325D522D82D44800B97D3B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		07325D552D82D94600B97D3B /* NavPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavPath.swift; sourceTree = "<group>"; };
 		079296502D8BB36A00838F6D /* ItemsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsManager.swift; sourceTree = "<group>"; };
+		07EFF3D32D8BE70C0009D351 /* NewItemVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 				072D4A102D86BF5100B9491C /* ListVM.swift */,
 				07325D552D82D94600B97D3B /* NavPath.swift */,
 				07024D042D88FE2E00D70DC6 /* LoginVM.swift */,
+				07EFF3D32D8BE70C0009D351 /* NewItemVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 			files = (
 				079296512D8BB36A00838F6D /* ItemsManager.swift in Sources */,
 				072D4A0D2D86499800B9491C /* NewItemView.swift in Sources */,
+				07EFF3D42D8BE70C0009D351 /* NewItemVM.swift in Sources */,
 				07325D4F2D7EDF4200B97D3B /* Item.swift in Sources */,
 				07325D4D2D7EDC3200B97D3B /* ListView.swift in Sources */,
 				072D4A172D86D12D00B9491C /* TitledTextField.swift in Sources */,

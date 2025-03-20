@@ -25,9 +25,9 @@ struct HomeView: View {
                     ListView(title: "In Progress", items: $vm.inProgressItems)
                     
                     ListView(title: "Done", items: $vm.doneItems)
-                    
                 }
                 .tabViewStyle(.page)
+            }
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .topBarLeading) {
@@ -71,7 +71,6 @@ struct HomeView: View {
             }
         }
     }
-}
 
 
 #Preview {

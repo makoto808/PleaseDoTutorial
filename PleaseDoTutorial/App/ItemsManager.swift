@@ -76,4 +76,14 @@ final class ItemsManager {
         }
         delegate?.didFetchBatchItems(sortedItems)
     }
+    
+    func save(_ item: Item) async throws {
+        do {
+            try await db.collection("cities").document("LA").setData(item.toObject())
+          print("Document successfully written!")
+        } catch {
+          print("Error writing document: \(error)")
+            throw error
+        }
+    }
 }
