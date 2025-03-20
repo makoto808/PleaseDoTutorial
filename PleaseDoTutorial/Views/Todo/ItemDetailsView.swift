@@ -44,7 +44,7 @@ struct ItemDetailsView: View {
                         path.removeLast()
                     }
                 } message: {
-                    Text("New item saved successfully.")
+                    Text("Item updated successfully.")
                 }
             }
         }
