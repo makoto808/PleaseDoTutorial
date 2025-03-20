@@ -39,9 +39,9 @@ struct ListView: View {
                     ListItemView(item: item, height: 100)
                 }
             }
-            .scrollContentBackground(.hidden)
-            .listStyle(.insetGrouped)
         }
+        .scrollContentBackground(.hidden)
+        .listStyle(.insetGrouped)
     }
 }
 

@@ -28,7 +28,6 @@ struct HomeView: View {
                 }
                 .tabViewStyle(.page)
             }
-                .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .topBarLeading) {
                         Button {
@@ -47,6 +46,7 @@ struct HomeView: View {
                         }
                     }
                 }
+                .navigationBarTitleDisplayMode(.inline)
                 .navigationDestination(for: NavPath.self) {
                     path in
                     switch path {

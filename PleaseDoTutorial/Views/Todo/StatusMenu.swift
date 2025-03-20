@@ -22,7 +22,7 @@ struct StatusMenu: View {
                         if $0 == .unknown {
                             EmptyView()
                         } else {
-                            Text(status.rawValue)
+                            Text($0.rawValue)
                         }
                     }
                 }

@@ -31,7 +31,7 @@ struct ItemDetailsView: View {
             Spacer()
             
             if vm.initialItem.isDifferent(comparedTo: vm.updatedItem) {
-                CTAButton(title: "Confirm") {
+                CTAButton(title: "Update") {
                     vm.updateItem()
                 }
                 .alert("Alert", isPresented: $vm.updateItemError) {
