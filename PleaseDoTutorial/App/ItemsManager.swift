@@ -43,7 +43,8 @@ final class ItemsManager {
                 return
             }
             guard let self, let snapshot else { return }
-            snapshot.documentChanges.forEach { [weak self] diff in
+            snapshot.documentChanges.forEach { [weak self] diff
+                in
                 guard let self else { return }
                 let data = diff.document.data()
                 let item = Item(data: data)
