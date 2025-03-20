@@ -152,13 +152,13 @@
 			children = (
 				07024CF02D870C4D00D70DC6 /* LoginView.swift */,
 				07024CF62D878D1000D70DC6 /* EmailTextField.swift */,
+				07024D002D8813FA00D70DC6 /* KeyboardView.swift */,
 				07024CFA2D8792D300D70DC6 /* LoginButton.swift */,
 				07024CF42D878B2100D70DC6 /* LoginFields.swift */,
 				07024CF22D870EAC00D70DC6 /* LoginTitleView.swift */,
 				07024CF82D878F4000D70DC6 /* PasswordField.swift */,
 				07024CFE2D88138300D70DC6 /* SignUpFields.swift */,
 				07024CFC2D88100900D70DC6 /* TogglePromptView.swift */,
-				07024D002D8813FA00D70DC6 /* KeyboardView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -216,11 +216,11 @@
 		07325D392D7ED11A00B97D3B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				072D4A102D86BF5100B9491C /* ListVM.swift */,
-				07325D552D82D94600B97D3B /* NavPath.swift */,
-				07024D042D88FE2E00D70DC6 /* LoginVM.swift */,
-				07EFF3D32D8BE70C0009D351 /* NewItemVM.swift */,
 				07EFF3D52D8BFE180009D351 /* ItemDetailsVM.swift */,
+				072D4A102D86BF5100B9491C /* ListVM.swift */,
+				07024D042D88FE2E00D70DC6 /* LoginVM.swift */,
+				07325D552D82D94600B97D3B /* NavPath.swift */,
+				07EFF3D32D8BE70C0009D351 /* NewItemVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
