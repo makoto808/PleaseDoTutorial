@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
-    @StateObject var vm = LoginVM()
+    @EnvironmentObject var vm: LoginVM
     
     var body: some View {
         VStack(alignment: .leading, spacing: 15) {
