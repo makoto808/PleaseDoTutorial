@@ -20,15 +20,14 @@ struct HomeView: View {
                     .ignoresSafeArea()
                 
                 TabView {
-                    ListView(title: "To Do", items: $vm.todoItems)
+                    ListView(title: "To Do", items: $vm.todoItems, shouldReDraw: $vm.shouldReDraw)
                     
-                    ListView(title: "In Progress", items: $vm.inProgressItems)
+                    ListView(title: "In Progress", items: $vm.inProgressItems, shouldReDraw: $vm.shouldReDraw)
                     
-                    ListView(title: "Done", items: $vm.doneItems)
-                    
+                    ListView(title: "Done", items: $vm.doneItems, shouldReDraw: $vm.shouldReDraw)
                 }
                 .tabViewStyle(.page)
-                .navigationBarTitleDisplayMode(.inline)
+            }
                 .toolbar {
                     ToolbarItem(placement: .topBarLeading) {
                         Button {
@@ -47,13 +46,14 @@ struct HomeView: View {
                         }
                     }
                 }
+                .navigationBarTitleDisplayMode(.inline)
                 .navigationDestination(for: NavPath.self) {
                     path in
                     switch path {
                     case .newItem:
-                        NewItemView()
+                        NewItemView(path: $path)
                     case .details(let item):
-                        ItemDetailsView(item: item)
+                        ItemDetailsView(item: item, path: $path)
                     }
                 }
                 .confirmationDialog("Continue signing out",
@@ -66,9 +66,11 @@ struct HomeView: View {
                     Text("Continue signing out")
                 }
             }
+            .onAppear {
+                vm.fetchItems()
+            }
         }
     }
-}
 
 
 #Preview {

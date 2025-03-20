@@ -8,39 +8,51 @@
 import SwiftUI
 
 struct NewItemView: View {
-    @State private var text = ""
-    @State private var description = ""
-    @State private var item = Item(id: "abc123", authorId: "John Doe", title: "First Name", description: "First Description", startDate: .now, status: .todo, priority: .low)
+    @StateObject private var vm = NewItemVM()
+    @Binding var path: [NavPath]
     
     var body: some View {
         VStack(spacing: 10) {
             
             Spacer()
             
-            TitledTextField(title: "Title", text: $text, placeholder: "What do you need to do?")
+            TitledTextField(title: "Title", text: $vm.newItem.title, placeholder: "What do you need to do?")
             
             Divider()
             
-            TitledTextField(title: "Description", text: $description, placeholder: "Add a brief description")
+            TitledTextField(title: "Description", text: $vm.newItem.description, placeholder: "Add a brief description")
             
             Divider()
             
-            StatusMenu(status: $item.status)
+            StatusMenu(status: $vm.newItem.status)
             
             Divider()
             
-            PriorityMenu(priority: $item.priority)
+            PriorityMenu(priority: $vm.newItem.priority)
             
             Spacer()
             
             CTAButton(title: "Confirm") {
-                print("CTAButton Tapped")
+                vm.saveNewItem()
+            }
+            .alert("Alert", isPresented: $vm.saveItemError) {
+                Button("Dismiss", role: .cancel) {}
+            } message: {
+                Text("Error saving new item.")
+            }
+            .alert("Success", isPresented: $vm.didSaveItem) {
+                Button("Dismiss", role: .cancel) {
+                    path.removeLast()
+                }
+            } message: {
+                Text("New item saved successfully.")
             }
         }
+        
         .padding(.horizontal)
     }
 }
 
 #Preview {
-    NewItemView()
+    NewItemView(path: .constant([]))
 }
