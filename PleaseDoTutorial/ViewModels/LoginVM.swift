@@ -45,8 +45,12 @@ final class LoginVM: ObservableObject {
         auth.delegate = self
     }
     
-    func signUp() {
-        auth.signUp(fname, lname, newEmail, newPW)
+    func didTapLoginButton() {
+        if isLoggingIn {
+            auth.signIn(email, pw)
+        } else {
+            auth.signUp(fname, lname, newEmail, newPW)
+        }
     }
 }
 
